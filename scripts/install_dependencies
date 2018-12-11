@@ -1,2 +1,2 @@
 #!/bin/bash
-python ./open.py
+python /home/ec2-user/rg_daemon/open.py
