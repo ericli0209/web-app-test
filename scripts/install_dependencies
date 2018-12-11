@@ -1,4 +1,4 @@
 #!/bin/bash
 pwd
 ls -r
-python scripts/open.py
+python /home/ec2-user/rg_daemon/scripts/open.py
