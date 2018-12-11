@@ -1,2 +1,2 @@
 #!/bin/bash
-python open.py
+python ./open.py
