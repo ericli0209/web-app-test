@@ -1,8 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
+  - source: /
+    destination: /home/ec2-user/rg_daemon
+permissions:
+  - object: "/home/ec2-user/rg_daemon"
+    owner: ec2-user
+    group: ec2-user
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
@@ -15,4 +19,6 @@ hooks:
     - location: scripts/stop_server
       timeout: 300
       runas: root
+
+
 
