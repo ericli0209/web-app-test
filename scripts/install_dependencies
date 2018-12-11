@@ -1,4 +1,5 @@
 #!/bin/bash
 pwd
 ls -r
+ls -al /home/amazon-growth/rg_daemon
 python /home/ec2-user/rg_daemon/scripts/open.py
