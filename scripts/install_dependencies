@@ -2,5 +2,5 @@
 pwd
 ls -r
 ls -al /home/ec2-user
-cd /home/ec2-user/scripts
+#cd /home/ec2-user/scripts
 python /home/ec2-user/scripts/open.py
