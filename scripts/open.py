@@ -1,5 +1,5 @@
 #/bin/python
 
-f= open("1.txt","w+")
+f= open(".env","w+")
 f.write("test")
 
