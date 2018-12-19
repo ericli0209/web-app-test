@@ -5,7 +5,7 @@ files:
     destination: /home/ec2-user
 permissions:
   - object: "/home/ec2-user"
-    owner: ec2-user
+    owner: ec2-use
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
