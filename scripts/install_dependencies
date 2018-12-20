@@ -1,8 +1,2 @@
 #!/bin/bash
-pwd
-ls -r
-ls -al /home/ec2-user
-env
-#cd /home/ec2-user/scripts
-pip install boto3
-python /home/ec2-user/scripts/open.py
+yum install -y httpd
