@@ -16,5 +16,5 @@ hooks:
       timeout: 300
       runas: root
   AfterAllowTraffic:
-     - location: Scripts/BGTG.sh
-       timeout: 180
+    - location: Scripts/BGTG.sh
+      timeout: 180
