@@ -34,8 +34,7 @@ get_instance_id() {
 INSTANCE_ID=$(get_instance_id)
 echo $INSTANCE_ID
 
-Targe_Group_ARN1=arn:aws:elasticloadbalancing:ap-northeast-1:441185900653:targetgroup/codestart-instance/ccbe9120b3af775a
-Targe_Group_ARN2=arn:aws:elasticloadbalancing:ap-northeast-1:441185900653:targetgroup/codedeploy-jenkins-TG/2fc5925cee3a03c6
+Targe_Group_ARN1=arn:aws:elasticloadbalancing:ap-northeast-1:441185900653:targetgroup/codedeploy-ec-asg/a8310ef39903307a
 
 exec_with_fulljitter_retry() {
     local MAX_RETRIES=${EXPBACKOFF_MAX_RETRIES:-8} # Max number of retries
@@ -117,4 +116,4 @@ echo $asg
 #Attaching the ALB TG to the new(Green) ASG created by Codedeploy.
 
 $AWS_CLI autoscaling attach-load-balancer-target-groups --auto-scaling-group-name $asg --target-group-arns $Targe_Group_ARN1
-$AWS_CLI autoscaling attach-load-balancer-target-groups --auto-scaling-group-name $asg --target-group-arns $Targe_Group_ARN2
+
