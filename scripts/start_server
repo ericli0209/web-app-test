@@ -1,4 +1,4 @@
 #!/bin/bash
 service httpd start
 
-mkdir ./tmp && cd ./tmp && git clone https://github.com/ericli0209/web-app-test.git
+mkdir tmp/test && cd /tmp/test && git clone https://github.com/ericli0209/web-app-test.git
