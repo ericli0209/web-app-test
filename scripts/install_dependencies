@@ -1,6 +1,5 @@
 #!/bin/bash
 yum install -y httpd
-#!/bin/bash
 
 deploymentid=$(aws deploy get-deployment-group --application-name nht --deployment-group-name nht-ec2 --region ap-northeast-1 --query deploymentGroupInfo.deploymentGroupId --output text)
 
@@ -10,4 +9,5 @@ file1=/var/www/html/index2.html
 
 touch /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
 echo $file >> /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
+sleep 5
 echo $file1 >> /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
