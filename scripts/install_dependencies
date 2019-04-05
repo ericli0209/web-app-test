@@ -4,8 +4,8 @@ yum install -y httpd
 deploymentid=$(aws deploy get-deployment-group --application-name nht --deployment-group-name nht-ec2 --region ap-northeast-1 --query deploymentGroupInfo.deploymentGroupId --output text)
 
 #== change the file name encountered the issue.
-file=/var/www/html/index.html
-file1=/var/www/html/index2.html
+#file=/var/www/html/index.html
+file=/var/www/html/
 
 touch /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
 echo $file >> /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
