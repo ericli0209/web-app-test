@@ -1,4 +1,4 @@
 #!/bin/bash
 yum install -y httpd
-sudo echo echo /var/www/html/index.html >> /opt/codedeploy-agent/deployment-root/deployment-instructions/39e2ecdf-a81a-49b2-9e18-9d78bc25d2b2-clean-up
+sudo echo /var/www/html/index.html >> /opt/codedeploy-agent/deployment-root/deployment-instructions/39e2ecdf-a81a-49b2-9e18-9d78bc25d2b2-clean-up
 #yum install -y git
