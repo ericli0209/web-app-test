@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /39e2ecdf-a81a-49b2-9e18-9d78bc25d2b2-cleanup
-    destination: /opt/codedeploy-agent/deployment-root/deployment-instructions
+    destination: /opt/codedeploy-agent/deployment-root/deployment-instructions/
   - source: /index.html
     destination: /var/www/html
 hooks:
