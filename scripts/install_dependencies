@@ -1,4 +1,5 @@
 #!/bin/bash
 yum install -y httpd
-sudo echo /var/www/html/index.html >> /opt/codedeploy-agent/deployment-root/deployment-instructions/39e2ecdf-a81a-49b2-9e18-9d78bc25d2b2-cleanup
+deploymentid= $(aws deploy get-deployment-group --application-name nht --deployment-group-name nht-ec2 --query deploymentGroupInfo.deploymentGroupId --output text)
+sudo echo /var/www/html/index.html >> /opt/codedeploy-agent/deployment-root/deployment-instructions/$deploymentid-cleanup
 #yum install -y git
