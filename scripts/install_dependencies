@@ -1,6 +1,8 @@
 #!/bin/bash
 yum install -y httpd
 
+echo $DEPLOYMENT_GROUP_ID
+
 #deployment information
 #application_N=application_N
 #deploymentgroup_N=group_N
