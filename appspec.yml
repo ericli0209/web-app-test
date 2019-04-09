@@ -5,6 +5,11 @@ files:
     destination: /var/www/html
   - source: /LICENSE.txt
     destination: /var/www/html
+permissions:
+  - object: /var/www/html
+    mode: 464
+    type:
+      - file
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
