@@ -6,8 +6,8 @@ files:
   - source: /LICENSE.txt
     destination: /var/www/html
 permissions:
-  - object: /var/www/html
-    mode: 464
+  - object: /var/www/html/index.html
+    mode: 400
     type:
       - file
 hooks:
