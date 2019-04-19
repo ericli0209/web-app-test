@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install -y httpd
+#yum install -y httpd
 sudo amazon-linux-extras install -y npm --enablerepo=epel
 #sudo yum -y install npm --enablerepo=epel
 
