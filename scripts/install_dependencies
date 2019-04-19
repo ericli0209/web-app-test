@@ -1,6 +1,7 @@
 #!/bin/bash
 yum install -y httpd
-sudo yum -y install npm --enablerepo=epel
+sudo amazon-linux-extras install -y npm --enablerepo=epel
+#sudo yum -y install npm --enablerepo=epel
 
 
 #deployment information
