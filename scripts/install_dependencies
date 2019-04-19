@@ -1,6 +1,6 @@
 #!/bin/bash
 yum install -y httpd
-sudo yum install npm --enablerepo=epel
+sudo yum -y install npm --enablerepo=epel
 
 
 #deployment information
