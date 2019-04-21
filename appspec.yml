@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /**/*
-    destination: /var/www/html
+  - source: /
+    destination: home/ex2-user/890enterprise
   - source: /LICENSE.txt
     destination: /var/www/html
 permissions:
