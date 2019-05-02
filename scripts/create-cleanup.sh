@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #== change the file name encountered the issue.
-file1=/var/www/html/index.html
-file2=/var/www/html/index2.html
+file1=/var/www/index.html
+file2=/var/www/index2.html
 #file_N=file_N
 
 
