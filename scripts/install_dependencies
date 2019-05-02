@@ -1,6 +1,6 @@
 #!/bin/bash
 #yum install -y httpd
-#sudo apt-get install -y httpd
+sudo apt-get -y install apache2
 git clone https://github.com/ericli0209/web-app-test.git
 #sudo amazon-linux-extras install -y epel && sudo yum -y install npm
 #sudo yum -y install npm --enablerepo=epel
