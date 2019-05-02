@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo $DEPLOYMENT_GROUP_ID-cleanup
+
 deploymentgroupid=$DEPLOYMENT_GROUP_ID
 
 #== change the file name encountered the issue.
