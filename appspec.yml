@@ -1,7 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: index.html
+#  - source: index.html
+  - source: /*
     destination: /var/www/
   - source: index2.html
     destination: /var/www/
